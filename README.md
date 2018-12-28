@@ -3,7 +3,7 @@
 ## Mobile App
 
 
-## Clone the Repo from  github
+### Clone the Repo from  github
 
 ```
 git clone https://github.com/eddysagay/movies-app-graphql.git
@@ -14,13 +14,13 @@ git clone https://github.com/eddysagay/movies-app-graphql.git
 cd movies-app-graphql/
 ```
 
-### install node_modules
+### Install node_modules
 
 ```
   npm install
 ```
 
-### start the node
+### Start the node
 
 ```
   npm start

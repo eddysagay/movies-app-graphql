@@ -14,13 +14,15 @@ import { Provider } from 'react-redux';
 import {AppRegistry} from 'react-native';
 import ApolloClient, { createNetworkInterface } from 'apollo-client';
 import { ApolloProvider } from 'react-apollo';
-
-const client = new ApolloClient({
-  networkInterface: createNetworkInterface({ uri: 'https://www.graphqlhub.com/graphql'}),
-});
+import { URL } from './util/URL';
 
 import Store from './store/Store';
 import RouteNavigator from './index';
+
+const { GRAPHQL_URL } = URL;
+const client = new ApolloClient({
+  networkInterface: createNetworkInterface({ uri: GRAPHQL_URL}),
+});
 
 /**
  * Sets the store and client to the providers
